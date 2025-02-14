@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quieres ser mi novia?</title>
+    <title>abre el link amorcito</title>
     <style>
         body {
             text-align: center;
@@ -54,8 +54,8 @@
             if (questionIndex === 0 && step === 1) {
                 document.querySelector('.question').innerText = '¿Tienes novio?';
                 document.querySelector('.buttons').innerHTML = `
-                    <button class="btn" onmouseover="moveButton()">Sí</button>
-                    <button class="btn" onmouseover="moveButton()">No</button>
+                    <button class="btn" onclick="moveButton()">Sí</button>
+                    <button class="btn" onclick="moveButton()">No</button>
                     <button class="btn" onclick="nextQuestion(2)">No pero Ruy lo será</button>
                 `;
                 questionIndex++;
@@ -79,7 +79,7 @@
         }
 
         function repeatQuestion() {
-            alert("Inténtalo de nuevo...");
+            alert("salte entonces");
         }
 
         function showLove() {
