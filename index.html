@@ -41,7 +41,7 @@
 </head>
 <body>
     <div class="container" id="quiz">
-        <div class="question">¿Eres Aricum?</div>
+        <div class="question">¿Eres Aurora?</div>
         <div class="buttons">
             <button class="btn" onclick="nextQuestion(1)">Sí</button>
             <button class="btn" onclick="repeatQuestion()">No</button>
@@ -56,7 +56,7 @@
                 document.querySelector('.buttons').innerHTML = `
                     <button class="btn" onclick="moveButton()">Sí</button>
                     <button class="btn" onclick="moveButton()">No</button>
-                    <button class="btn" onclick="nextQuestion(2)">No pero Ruy lo será</button>
+                    <button class="btn" onclick="nextQuestion(2)">No pero Ruy va a ser mi noviobutton>
                 `;
                 questionIndex++;
             } else if (questionIndex === 1 && step === 2) {
@@ -69,7 +69,7 @@
             } else if (questionIndex === 2 && step === 3) {
                 document.getElementById('quiz').innerHTML = `
                     <div class="question">¿Quieres ser mi novia? </div>
-                    <p>Espero que esta vez sí me correspondas porque te quiero demasiado y quiero que estemos juntos. Quiero conocerte completa al derecho y al revés y hacerte totalmente mía en cuerpo, mente y alma porque tú eres la persona que me hace feliz y me hace sentir en paz.</p>
+                    <p>Espero que sí me correspondas porque te quiero demasiado y quiero que estemos juntos. Quiero conocerte completa al derecho y al revés y hacerte totalmente mía en cuerpo, mente y alma porque tú eres la persona que me hace feliz y me hace sentir en paz.</p>
                     <div class="buttons">
                         <button class="btn yes" onclick="showLove()">Sí </button>
                         <button class="btn no" onmouseover="moveButton()" onclick="askAgain()">No </button>
@@ -83,7 +83,7 @@
         }
 
         function showLove() {
-            document.body.innerHTML = '<h1>te amo mucho muñequita uwu muak </h1>';
+            document.body.innerHTML = '<h1>te amo mucho muñequita muak </h1>';
             document.body.innerHTML += '<video width="320" height="240" controls autoplay><source src="videomandarina.mp4" type="video/mp4">Tu navegador no soporta videos.</video>';
         }
 
@@ -102,3 +102,4 @@
     </script>
 </body>
 </html>
+
